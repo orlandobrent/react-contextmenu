@@ -1,6 +1,6 @@
 {
   "name": "react-contextmenu",
-  "version": "2.3.0",
+  "version": "2.3.0a",
   "description": "Context Menu implemented in React",
   "main": "modules/index.js",
   "module": "es6/index.js",
@@ -24,7 +24,7 @@
     "test": "npm run eslint && npm run jest",
     "start": "npm run clean:examples && npm run webpack:examples && npm run start:server",
     "dist": "webpack --progress --profile --colors",
-    "build": "npm run clean && npm run test && npm run dist && npm run modules && npm run modules:es6",
+    "build": "npm run clean && npm run modules && npm run modules:es6",
     "build:examples": "npm run clean:examples && NODE_ENV=production npm run webpack:examples",
     "prepublish": "npm run build"
   },
