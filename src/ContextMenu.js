@@ -62,7 +62,7 @@ export default class ContextMenu extends Component {
         document.addEventListener('mousedown', this.handleOutsideClick);
         document.addEventListener('ontouchstart', this.handleOutsideClick);
         document.addEventListener('scroll', this.handleHide);
-        document.addEventListener('contextmenu', this.handleHide);
+        // document.addEventListener('contextmenu', this.handleHide);
         document.addEventListener('keyup', this.handleEscape);
         window.addEventListener('resize', this.handleHide);
     }
@@ -71,7 +71,7 @@ export default class ContextMenu extends Component {
         document.removeEventListener('mousedown', this.handleOutsideClick);
         document.removeEventListener('ontouchstart', this.handleOutsideClick);
         document.removeEventListener('scroll', this.handleHide);
-        document.removeEventListener('contextmenu', this.handleHide);
+        // document.removeEventListener('contextmenu', this.handleHide);
         document.removeEventListener('keyup', this.handleEscape);
         window.removeEventListener('resize', this.handleHide);
     }
